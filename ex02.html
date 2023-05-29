@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	ex02.html
+	<br>
+	<script type="text/javascript">
+		let name = "kim";
+		let age = prompt("나이 입력");//입력창 문자열
+		document.write("이름 : " + name + "<br>");
+		document.write(name + "님의 나이 : " + age + "<br>");
+		document.write(`${name}님의 나이 : ${age}<br>`);//~ ->`
+
+		console.log(`age : ${ typeof age }`);
+		document.write(`만 나이 : ${ age-1 }살 입니다`);//계산은 가능하다
+		//형변환
+		let num = Number(age);//숫자
+		console.log(`num : ${ typeof num }`);
+		console.log(`num : ${ typeof num.toString() }`);//문자로 형변환
+		console.log(`num : ${ typeof (num+"") }`);//문자로 형변환
+
+		document.write("<h1 align='center'>안녕하세요</h1>");//html, css 코드를 사용할 수 있다
+
+		const n = "kim";
+		n = "gim";
+		console.log(` n : ${n} `);
+	</script>
+
+</body>
+</html>

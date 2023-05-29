@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num01 = prompt("수(짝/홀)입력");
+		let num02 = prompt("수(3의 배수)입력");
+		let num03 = prompt("첫번째 수 입력");
+		let num04 = prompt("두번째 수 입력");
+		let result;
+		result = (num01 / 2 == 0) ? "짝수" : "홀수";
+		document.write(`${num01}는 ${result}입니다<br>`);
+
+		result = (num02 / 3 == 0) ? "3의 배수" : "3의 배수 아님";
+		document.write(`${num02}는 ${result}입니다<br>`);
+
+		result = (num03 > num04) ? num03 + "이" + num04 + "보다 크다"
+				: `${num03}이 ${num04}보다 크다`;
+		document.write(`${result}<br>`);
+	</script>
+</body>
+</html>

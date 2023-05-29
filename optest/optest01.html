@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let name = prompt("당신의 이름은?");
+		let age = prompt("당신의 나이는?");
+		let addr = prompt("당신의 주소는?");
+
+		document.write(`
+			<table border="1">
+				<tr>
+					<th>이름</th>	<th>나이</th>	<th>주소</th>
+				</tr>
+				<tr>
+					<td>${name}</td><td>${age}</td><td>${addr}</td>
+				</tr>
+			</table>
+		`);
+		
+		document.write("<table border='1'>");
+		document.write("<tr>");
+		document.write("<th>이름</th><th>나이</th><th>주소</th>");
+		document.write("</tr>");
+		document.write("<tr>");
+		document.write("<th>"+name+"</th><th>"+age+"</th><th>"+addr+"</th>");
+		document.write("</tr>");
+		document.write("</table>");
+
+	</script>
+</body>
+</html>

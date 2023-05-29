@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let msg = "";
+
+		const num = 1;//
+		switch (num) {
+		case 1:
+			msg += "1입력<br>";
+			break;
+		case 2:
+			msg += "2입력<br>";
+			break;
+		default:
+			msg += "1,2를 제외한 다른 값 입력<br>";
+			break;
+		}
+
+		const str = "안녕";//
+		switch (str) {
+		case "안녕":
+			msg += "안녕 입력";
+			break;
+		case "그래":
+			msg += "그래 입력";
+			break;
+		default:
+			msg += "다른 값 입력<br>";
+			break;
+		}
+
+		document.write(msg);
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num = 10;
+		let msg = "";
+		if (num % 2 === 0) {
+			msg = "짝수<br>";
+		} else {
+			msg = "홀수<br>";
+		}
+		document.write(msg);
+
+		const userId = "aaa", userPwd = "aaa";//아이디 비번 입력
+		
+		if (userId === "aaa") {
+			if (userPwd === "aaa") {
+				msg += "인증 통과!!!<br>";
+			} else {
+				msg += "비밀번호가 틀렸습니다<br>";
+			}
+		} else {
+			;
+			msg += "존재하지 않는 아이디 입니다<br>"
+		}
+		document.write(msg);
+	</script>
+</body>
+</html>

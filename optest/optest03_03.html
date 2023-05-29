@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const c = 2000;//커피기본
+		const c_m = 1500;//10개초과시
+		const u = 5000;//usb기본
+		let n, m, result;
+		let msg = "";
+		//1.
+		n = prompt("커피 몇 잔?");//
+		if (n > 10) {
+			m = n - 10;
+			result = (n-m) * c + m * c_m;
+		} else {
+			result = n * c;
+		}
+		document.write(`커피 ${n}잔의 가격은 ${result}원 입니다<br>`);
+		//2.
+		n = prompt("usb 몇 개?");//
+		if (n >= 100) {
+			result = parseInt(n * u - (n * u) / 12);
+		} else if (n >= 10) {
+			result = n * u - (n * u) / 10;
+		} else {
+			result = n * u;
+		}
+		document.write(`usb ${n}개의 가격은 ${result}원 입니다<br>`);
+	</script>
+</body>
+</html>

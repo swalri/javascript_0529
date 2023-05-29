@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n;
+		//1.
+		n = prompt("수 입력");//
+		if (n % 3 == 0) {
+			document.write(n + "<br>");
+		}
+		//2.
+		n = prompt("수 입력");//
+		if (n < 0) {
+			n *= -1;
+		}
+		document.write(n + "<br>");
+		//3.
+		let x = prompt("첫번째 수 입력");//
+		let y = prompt("두번째 수 입력");//
+		if (x > y) {
+			document.write(x + "<br>");
+		} else {
+			document.write(y + "<br>");
+		}
+		//4.
+		x = prompt("첫번째 수 입력");//
+		y = prompt("두번째 수 입력");//
+		z = prompt("세번째 수 입력");//
+		if (x > y) {
+			if (x > z) {
+				document.write(x + "<br>");
+			} else {
+				document.write(z + "<br>");
+			}
+		} else {
+			if (y > z) {
+				document.write(y + "<br>");
+			} else {
+				document.write(z + "<br>");
+			}
+		}
+		//5.
+		x = prompt("첫번째 수 입력");//
+		y = prompt("두번째 수 입력");//
+		if (x % 2 == 0) {
+			document.write(`${(x > y) ? (x % 2 == 0) ? x : "" : (y % 2 == 0) ? y: ""}<br>`);
+		}
+		//6.
+		x = prompt("첫번째 수 입력");//
+		y = prompt("두번째 수 입력");//
+		document.write(`${((x+y)%6==0)? parseInt(x)+parseInt(y):""}<br>`);
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//1.
+		/* 
+		let k, e, m, sum = 0, avg = 0;
+		let k_result = "합격", e_result = "합격", m_result = "합격", avg_result = "합격", greed="";
+		
+		k = prompt("국어 점수 입력");
+		e = prompt("영어 점수 입력");
+		m = prompt("수학 점수 입력");
+		
+		if(k < 40)	k_result = "불합격";
+		if(e < 40)	e_result = "불합격";
+		if(m < 40)	m_result = "불합격";
+		sum = Number(k) + Number(e) + parseInt(m);
+		avg = parseInt(sum)/3;
+		avg = avg.toFixed(2);
+		if(avg >= 90){
+		greed = 'A';
+		}else if(avg >= 80){
+		greed = 'B';
+		}else if(avg >= 70){
+		greed = 'C';
+		}else if(avg >= 60){
+		greed = 'D';
+		}else{
+		greed = 'F';
+		avg_result = "불합격";
+		}
+		document.write(`
+		국어 ${k}점 ${k_result} <br>
+		영어 ${e}점 ${e_result} <br>
+		수학 ${m}점 ${m_result} <br>			
+		평균 ${avg}점 ${avg_result} <br>
+		등급 ${greed} <br>
+		`);
+		*/
+		//2.
+		/* 	
+		let num = prompt("정수 입력");
+		num = parseInt(num);
+		if(num === 0){
+		document.write("잘못입력됨");
+		}else if(num % 12 == 0){
+		document.write("3의 배수 이면서 4의 배수에도 해당");
+		}else if(num %3 == 0){			
+		document.write("3의 배수에만 해당");
+		}else if(num %4 == 0){
+		document.write("4의 배수에만 해당");
+		}else if(num % 3 != 0 && num % 4 != 0){
+		document.write("3의 배수도, 4의 배수도 해당안됨");
+		}
+		*/
+		//3.
+		/* 
+		const m_pr = 30000;
+		const plus_pr = 5000;
+		let time = prompt("비행기 탈 시간을 입력");
+		let plus_time = time * 60 - 30;
+		let pr = (parseInt(plus_time) / 10) * parseInt(plus_pr)	+ parseInt(m_pr);
+		document.write(`비행기 ${time}시간 이용 요금은 ${pr}입니다 `);
+		*/
+	</script>
+</body>
+</html>
